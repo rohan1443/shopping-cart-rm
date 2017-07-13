@@ -1,0 +1,33 @@
+.shopping-item{
+  padding: 10px 0px;
+  border-bottom: 1px solid #d3d3d3;
+
+  .item-image{
+    text-align: center;
+    margin-top: 5px;
+  }
+}
+.product-description, .product-size, .product-quantity, .product-price {
+  padding: 10px 0;
+}
+.product-description > * {
+  margin: 5px 0;
+}
+
+.itemStyle, .itemColor, .itemSize, .editProduct {
+  color: #696969;
+}
+
+.input-qty{
+  width: 35px;
+  text-align: center;
+}
+
+.editProduct >ul >li:nth-child(odd){
+    padding: 0 5px;
+  }
+  
+.item-value{
+  border: none;
+  text-decoration: none;
+}
