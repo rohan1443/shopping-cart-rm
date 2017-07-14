@@ -17,8 +17,7 @@ const customStyles = {
 };
 
 const EDIT = "EDIT"
-      , ADD = "ADD TO BAG"
-      , IMAGE_URL = `../../assets/${this.props.productInfo.p_image}`;
+      , ADD = "ADD TO BAG";
 
 export default class EditModal extends Component {
   constructor(props) {
@@ -51,6 +50,8 @@ export default class EditModal extends Component {
 
 
   render() {
+    const IMAGE_URL = `../../assets/${this.props.productInfo.p_image}`;
+    
     return (
       <div>
         <ReactModal
