@@ -9,7 +9,6 @@ import HelpSection from './helpSection';
 export default class ShoppingList extends Component {
   constructor(props) {
     super(props)
-
     this.state = {
       productList: this.props.items.productsInCart
     }
@@ -23,14 +22,15 @@ export default class ShoppingList extends Component {
     this.setState({ productList: this.state.productList })
   }
 
+  //in progress... not completed
   updateProduct(productId, productNewPrice) {
     console.log(productId, productNewPrice)
     let productPriceIndex = this.state.productList.findIndex((product) => {
       return product.p_id === productId
     })
     this.state.productList[productPriceIndex].p_originalprice = productNewPrice;
-    
   }
+  //in progress... not completed
 
   render() {
     let productList = this.state.productList;
