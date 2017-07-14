@@ -26,6 +26,10 @@
 .editProduct >ul >li:nth-child(odd){
     padding: 0 5px;
   }
+
+.editProduct >ul >li {
+  cursor: pointer;
+  }
   
 .item-value{
   border: none;
